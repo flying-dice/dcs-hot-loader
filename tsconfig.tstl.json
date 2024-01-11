@@ -1,0 +1,13 @@
+{
+	"$schema": "https://raw.githubusercontent.com/TypeScriptToLua/TypeScriptToLua/master/tsconfig-schema.json",
+	"extends": "./tsconfig.json",
+	"exclude": ["node_modules", "dist", "**/*.spec.ts", "**/*.test.ts"],
+	"tstl": {
+		"sourceMapTraceback": true,
+		"luaBundleEntry": "src/index.ts",
+		"luaBundle": "dcs-hot-loader.lua",
+		"noResolvePaths": ["socket"],
+		"luaLibImport": "require-minimal",
+		"luaTarget": "5.1"
+	}
+}

@@ -1,0 +1,63 @@
+{
+  "name": "dcs-hot-loader",
+  "version": "0.1.0",
+  "description": "DCS World Hot Loader Server",
+  "main": "dist/dcs-hot-loader.lua",
+  "private": true,
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "tstl -p tsconfig.tstl.json",
+    "build:watch": "tstl --watch -p tsconfig.tstl.json",
+    "detect-circular": "madge --circular --extensions js,ts src",
+    "make-links": "node scripts/make-links.js",
+    "remove-links": "node scripts/remove-links.js"
+  },
+  "release": {
+    "branches": [
+      "main"
+    ],
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/npm",
+      "@semantic-release/git",
+      [
+        "@semantic-release/exec",
+        {
+          "prepareCmd": "npm run build"
+        }
+      ],
+      [
+        "@semantic-release/github",
+        {
+          "assets": [
+            "dist/*.lua"
+          ]
+        }
+      ]
+    ]
+  },
+  "dependencies": {
+    "@flying-dice/tslua-common": "^0.28.0",
+    "@flying-dice/tslua-http": "^0.28.0",
+    "@flying-dice/tslua-http-api": "^0.28.0",
+    "@flying-dice/tslua-dcs-gui-types": "^0.28.0",
+    "@flying-dice/tslua-rxi-json": "^0.28.0"
+  },
+  "devDependencies": {
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/commit-analyzer": "^11.1.0",
+    "@semantic-release/exec": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^9.2.6",
+    "@semantic-release/release-notes-generator": "^12.1.0",
+    "lua-types": "^2.13.1",
+    "madge": "^6.1.0",
+    "prettier": "^3.1.1",
+    "rimraf": "^5.0.5",
+    "semantic-release": "^22.0.12",
+    "traverse": "^0.6.8",
+    "typescript": "^5.2.2",
+    "typescript-to-lua": "^1.22.0"
+  }
+}
