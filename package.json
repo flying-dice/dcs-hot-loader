@@ -31,7 +31,8 @@
         "@semantic-release/github",
         {
           "assets": [
-            "dist/*.lua"
+            "dist/*.lua",
+            ".dropzone/*"
           ]
         }
       ]
