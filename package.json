@@ -1,6 +1,6 @@
 {
   "name": "dcs-hot-loader",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "DCS World Hot Loader Server",
   "main": "dist/dcs-hot-loader.lua",
   "private": true,
