@@ -55,7 +55,7 @@ The server will automatically start when you start DCS World.
 To use the server, make a request to the following endpoint
 
 ```shell
-curl --location 'http://127.0.0.1:51070/dofile' \
+curl --location 'http://127.0.0.1:7943/dofile' \
 --header 'Content-Type: application/json' \
 --data '{
     "path": "{WRITE_DIR}\\Scripts\\hello-world.lua",
@@ -83,7 +83,7 @@ The following variables are available for path replacements, ofc you can also us
 To get an active list of variables, make a request to the following endpoint
 
 ```shell
-curl --location 'http://127.0.0.1:51070/health'
+curl --location 'http://127.0.0.1:7943/health'
 ```
 
 ### Response

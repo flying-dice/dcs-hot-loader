@@ -1,5 +1,4 @@
 import { app } from "../app";
-import { jsonBodyParser } from "../middleware/json-body-parser";
 import { DofileDto } from "../dtos/dofile.dto";
 import { variables } from "../services/variables";
 import { HttpError } from "@flying-dice/tslua-http-api";
@@ -9,8 +8,16 @@ import { missionService } from "../services/mission";
 
 const logger = new Logger("DofileRouter");
 
-app.post("/dofile", jsonBodyParser, (req, res) => {
-  const { path, target } = req.body as unknown as DofileDto;
+app.options("/dofile", (req, res) => {
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader("Access-Control-Allow-Methods", "POST, OPTIONS");
+  res.setHeader("Access-Control-Allow-Headers", "Content-Type");
+  res.setHeader("Access-Control-Max-Age", "86400");
+  res.status(HttpStatus.NO_CONTENT).send("");
+});
+
+app.post("/dofile", (req, res) => {
+  const { path, target } = req.getBodyOrThrow<DofileDto>();
 
   let p = path;
 

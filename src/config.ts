@@ -11,5 +11,5 @@ Logger.transports = {
 
 export const config = {
   bindAddress: "127.0.0.1",
-  port: 51070,
+  port: 7943,
 };
