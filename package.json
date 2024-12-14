@@ -39,26 +39,26 @@
     ]
   },
   "dependencies": {
-    "@flying-dice/tslua-common": "^0.30.0",
-    "@flying-dice/tslua-http": "^0.30.0",
-    "@flying-dice/tslua-http-api": "^0.30.0",
-    "@flying-dice/tslua-dcs-gui-types": "^0.30.0",
-    "@flying-dice/tslua-rxi-json": "^0.30.0"
+    "@flying-dice/tslua-common": "^0.32.9",
+    "@flying-dice/tslua-http": "^0.32.9",
+    "@flying-dice/tslua-http-api": "^0.32.9",
+    "@flying-dice/tslua-dcs-gui-types": "^0.32.9",
+    "@flying-dice/tslua-rxi-json": "^0.32.9"
   },
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.3",
-    "@semantic-release/commit-analyzer": "^11.1.0",
+    "@semantic-release/commit-analyzer": "^13.0.0",
     "@semantic-release/exec": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
-    "@semantic-release/github": "^9.2.6",
-    "@semantic-release/release-notes-generator": "^12.1.0",
+    "@semantic-release/github": "^11.0.1",
+    "@semantic-release/release-notes-generator": "^14.0.1",
     "lua-types": "^2.13.1",
-    "madge": "^6.1.0",
-    "prettier": "^3.1.1",
-    "rimraf": "^5.0.5",
-    "semantic-release": "^22.0.12",
-    "traverse": "^0.6.8",
-    "typescript": "^5.2.2",
-    "typescript-to-lua": "^1.22.0"
+    "madge": "^8.0.0",
+    "prettier": "^3.4.2",
+    "rimraf": "^6.0.1",
+    "semantic-release": "^24.2.0",
+    "traverse": "^0.6.10",
+    "typescript": "^5.7.2",
+    "typescript-to-lua": "^1.28.1"
   }
 }
