@@ -6,5 +6,11 @@
   "lockFileMaintenance": {
     "enabled": true,
     "automerge": true
-  }
+  },
+  "packageRules": [
+    {
+      "groupName": "ts-lua",
+      "matchPackageNames": ["@flying-dice/tslua-*"]
+    }
+  ]
 }

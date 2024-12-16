@@ -39,11 +39,11 @@
     ]
   },
   "dependencies": {
-    "@flying-dice/tslua-common": "^0.32.9",
-    "@flying-dice/tslua-http": "^0.32.9",
-    "@flying-dice/tslua-http-api": "^0.32.9",
-    "@flying-dice/tslua-dcs-gui-types": "^0.32.9",
-    "@flying-dice/tslua-rxi-json": "^0.32.9"
+    "@flying-dice/tslua-common": "^0.32.11",
+    "@flying-dice/tslua-http": "^0.32.11",
+    "@flying-dice/tslua-http-api": "^0.32.11",
+    "@flying-dice/tslua-dcs-gui-types": "^0.32.11",
+    "@flying-dice/tslua-rxi-json": "^0.32.11"
   },
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.3",
@@ -51,7 +51,7 @@
     "@semantic-release/exec": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
     "@semantic-release/github": "^11.0.1",
-    "@semantic-release/release-notes-generator": "^14.0.1",
+    "@semantic-release/release-notes-generator": "^14.0.2",
     "lua-types": "^2.13.1",
     "madge": "^8.0.0",
     "prettier": "^3.4.2",
