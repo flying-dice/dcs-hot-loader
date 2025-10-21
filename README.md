@@ -13,7 +13,7 @@ It exposes a REST API to allow for the execution of lua scripts.
 
 All that is required is to copy the `dcs-hot-loader.lua` into the `Scripts/Hooks` folder in your DCS Saved Games folder.
 
-[![dropzone](https://raw.githubusercontent.com/flying-dice/dcs-dropzone-registry-viewer/refs/heads/main/public/download.svg)](https://dcs-dropzone.app/#/hot-loader)
+[![dropzone](https://dcs-dropzone.app/download.svg)](https://dcs-dropzone.app/#/hot-loader)
 
 ### Open Beta
 
