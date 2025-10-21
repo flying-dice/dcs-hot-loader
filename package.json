@@ -48,15 +48,15 @@
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/commit-analyzer": "^13.0.0",
-    "@semantic-release/exec": "^6.0.3",
+    "@semantic-release/exec": "^7.0.0",
     "@semantic-release/git": "^10.0.1",
-    "@semantic-release/github": "^11.0.1",
+    "@semantic-release/github": "^12.0.0",
     "@semantic-release/release-notes-generator": "^14.0.2",
     "lua-types": "^2.13.1",
     "madge": "^8.0.0",
     "prettier": "^3.4.2",
     "rimraf": "^6.0.1",
-    "semantic-release": "^24.2.0",
+    "semantic-release": "^25.0.0",
     "traverse": "^0.6.10",
     "typescript": "^5.7.2",
     "typescript-to-lua": "^1.28.1"
